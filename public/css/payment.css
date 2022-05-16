@@ -1,0 +1,290 @@
+/* ---------------------------------------------------THANH TOÁN----------------------------------------------------------------------*/
+
+.text-thanhtoan {
+  position: absolute;
+  top: -57px;
+  width: 700px;
+}
+
+.khungnoi {
+  margin-left: -32px;
+  z-index: -1;
+}
+
+.bang2 {
+  margin-left: -54px;
+}
+
+.thongtinthanhtoan {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  left: 68.3%;
+  top: -10px;
+}
+
+.vecong-vegiadinh {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  left: 75px;
+  top: -10px;
+}
+
+.thanhtoan {
+  position: absolute;
+  left: 68.3%;
+  top: 15%;
+  width: 331px;
+}
+
+.thongtinve {
+  position: absolute;
+  left: 8%;
+  top: 15%;
+  width: 460px;
+}
+
+.thanhtoan label {
+  margin-top: -60px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 115px;
+}
+
+.thanhtoan input {
+  background: #ffffff;
+  box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 27%);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  border: none;
+}
+
+.thongtinve label {
+  margin-top: 0px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.thongtinve input {
+  background: #ffffff;
+  box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 27%);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
+  outline: none;
+  border: none;
+  display: block;
+}
+
+.group-tt {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30px;
+}
+
+.group-slv {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  height: 30px;
+}
+
+.soluongve-input {
+  width: 60px;
+}
+
+.ve {
+  position: absolute;
+  top: 40px;
+  left: 66px;
+}
+
+.group-nsd {
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  height: 30px;
+}
+
+.group-ttlh {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  height: 30px;
+}
+
+.thongtinlienhe-input {
+  width: 260px;
+}
+
+.group-dt {
+  position: absolute;
+  top: 160px;
+  left: 0px;
+  height: 30px;
+}
+
+.group-email {
+  position: absolute;
+  top: 240px;
+  left: 0px;
+  height: 30px;
+}
+
+.email-input {
+  width: 260px;
+}
+
+.cvv-cvc {
+  appearance: none;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 260px;
+  left: 0px;
+}
+
+.ngayhethan {
+  appearance: none;
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  left: 0px;
+  top: 190px;
+}
+
+.hotenchuthe {
+  position: absolute;
+  width: 330px;
+  height: 40px;
+  left: 0px;
+  top: 110px;
+}
+
+.sothe {
+  position: absolute;
+  width: 330px;
+  height: 40px;
+  left: 0px;
+  top: 30px;
+}
+
+.nutthanhtoan {
+  position: absolute;
+  left: 700px;
+  top: 380px;
+  width: 260px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+}
+
+.input {
+  height: 45px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#pay-info {
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+}
+
+.input-sort {
+  width: 30%;
+}
+
+.date {
+  width: 83.4%;
+}
+
+.btn-pay img {
+  width: 90%;
+  transform: translate(6%, -3%);
+}
+
+.banner {
+  width: 75%;
+}
+
+.btn-expiration-date {
+  background: none;
+  border: none;
+  transform: translateX(5px);
+}
+
+.group-date {
+  display: flex;
+  align-items: center;
+}
+
+.trini-img {
+  position: absolute;
+  left: -9%;
+  top: 11%;
+}
+
+.trini-img img {
+  width: 200px;
+}
+
+.entered-info {
+  width: 530px;
+  transform: translate(20%, -10%);
+}
+
+.group-3-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner-pay-info img {
+  width: 312px;
+  transform: translate(32%, -40%);
+}
+/* celendar */
+.ui-datepicker-calendar {
+  display: none;
+}
+.ui-state-default:hover {
+  background: none !important;
+  border: none !important;
+  color: #ccc !important;
+}
+.ui-state-default {
+  width: 100% !important;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  display: flex;
+  width: 60%;
+}
+button.ui-datepicker-current {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+  justify-content: center;
+  margin-top: 10px;
+}

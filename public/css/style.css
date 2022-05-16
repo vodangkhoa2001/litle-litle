@@ -1,0 +1,716 @@
+/* font */
+
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("root.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primary);
+    font-size: 18px;
+}
+
+body {
+    width: 1349px;
+    height: 813px;
+    background: radial-gradient(97% 60% at 50% 50%, #ffdb7e 0%, #ff7a00 100%);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+label {
+    font-weight: 600;
+}
+
+#main {
+    position: absolute;
+    width: 96%;
+    height: 800px;
+    left: 2%;
+    top: 2%;
+    background-image: url("../img/bg.png");
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0 0 50px 50px;
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+}
+
+.header {
+    position: fixed;
+    background-image: url("../img/navigation-bg.png");
+    background-position: bottom;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 125px;
+    align-items: center;
+    padding-bottom: 50px;
+    z-index: 99;
+    color: #fff;
+    /* background-color: var(--color-primary); */
+    /* box-shadow: 0px 4px 35px rgba(162, 58, 0, 0.75);
+  border-radius: 0 0 40% 40%; */
+}
+
+.header img {
+    width: 165px;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    width: 500px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-weight: 700;
+}
+
+.menu ul li {
+    width: 110px;
+    text-align: center;
+}
+
+.menu ul li:hover,
+.menu ul li .active {
+    border: solid 3px #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* content */
+
+.content {
+    position: absolute;
+    width: 93%;
+    height: 465px;
+    left: 6%;
+    top: 26%;
+    display: flex;
+}
+
+.info-ticket {
+    width: 58%;
+    height: 465px;
+}
+
+.info-ticket .bg-text {
+    position: absolute;
+    width: 58%;
+    height: 465px;
+    z-index: -1;
+    left: 0%;
+    top: 0%;
+}
+
+.match {
+    position: absolute;
+    width: 100px;
+    height: 454px;
+    left: 55.7%;
+    z-index: -2;
+}
+
+.form {
+    position: absolute;
+    width: 416px;
+    height: 465px;
+    left: 60%;
+}
+
+.bg-form {
+    width: 100%;
+    position: absolute;
+}
+
+.banner {
+    position: absolute;
+    z-index: 2;
+    top: -30px;
+    left: 14%;
+}
+
+#ticket {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 4%;
+    right: 4%;
+}
+
+.ticket-type-input {
+    min-width: 320px;
+    height: 50px;
+}
+
+.ticket-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-select {
+    width: 40px;
+    height: 40px;
+    transform: translateY(5px);
+}
+
+#ticket .btn::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -0.54%;
+    right: -0.41%;
+    top: -16.55%;
+    bottom: -0.38%;
+    background: #ffde32;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#ticket .icon-down {
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 15px;
+    transform: translateY(-10%);
+}
+
+.input {
+    background: #ffffff;
+    box-shadow: inset -1px 3px 3px rgb(179 91 11 / 50%);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 45px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.amount-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.amount {
+    width: 150px;
+    height: 50px;
+}
+
+.date {
+    width: 150px;
+    height: 50px;
+}
+
+.btn {
+    filter: drop-shadow(0px 3px 2px #de9959);
+    background: #ffd27b;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-date {
+    width: 40px;
+    height: 40px;
+    transform: translateY(5px);
+}
+
+.icon-date {
+    color: #fff;
+    font-size: 25px;
+    transform: translateY(-5px);
+}
+
+.input-full {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-book {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+    background: #bd000b;
+    border-radius: 10px;
+    border: none;
+    filter: drop-shadow(0px 3px 2px #de9959);
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#ticket .btn-book::before {
+    content: "";
+    width: 250px;
+    height: 50px;
+    background-color: #ff000a;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: -0.04%;
+    right: -0.41%;
+    top: -16.55%;
+    bottom: -0.38%;
+    z-index: -1;
+}
+
+.text {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.text-1,
+.text-2 {
+    opacity: 0.7;
+    padding-left: 70px;
+}
+
+.star-icon {
+    width: 30px;
+    height: 30px;
+    transform: translate(-5px, 5px);
+}
+
+.info-ticket ul {
+    left: 10%;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.info-ticket ul li {
+    opacity: 0.8;
+}
+
+.lisa-img img {
+    position: absolute;
+    width: 210px;
+    left: -9%;
+}
+
+.logo-dam-sen-park {
+    position: absolute;
+    left: 6%;
+    top: 14%;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 80px;
+}
+
+.logo-dam-sen-park img {
+    width: 100px;
+}
+
+.four-child {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+
+.four-child img {
+    width: 450px;
+}
+
+.dam-sen-park-text {
+    margin-left: 15px;
+    margin-top: -20px;
+}
+
+.dam-sen-park-text img {
+    width: 140px;
+}
+
+.dam-sen-park-text img:first-child {
+    width: 235px;
+}
+
+.hot-air-balloon-1 img {
+    position: absolute;
+    width: 110px;
+    left: -1%;
+    top: 30%;
+}
+
+.hot-air-balloon-2 img {
+    position: absolute;
+    left: 42.03%;
+    top: 12%;
+    width: 100px;
+    z-index: -2;
+}
+
+.hot-air-balloon-3 img {
+    position: absolute;
+    left: 57%;
+    top: 8%;
+    width: 90px;
+}
+
+.hot-air-balloon-4 img {
+    position: absolute;
+    left: 32.81%;
+    bottom: 0px;
+    z-index: -2;
+    width: 105px;
+}
+
+.hot-air-balloon-5 img {
+    position: absolute;
+    right: 1.18%;
+    bottom: 4.71%;
+    width: 110px;
+    z-index: -2;
+}
+
+.hot-air-balloon-6 img {
+    position: absolute;
+    right: -1.98%;
+    top: 34.15%;
+    width: 100px;
+    z-index: -2;
+}
+
+.ui-datepicker {
+    padding: 0 20px !important;
+    border-radius: 20px !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    display: flex;
+    background: #fff;
+    border: none;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.8em !important;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 70px !important;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border-radius: 50%;
+    background: #fff !important;
+    border: none !important;
+}
+
+.ui-state-default:hover {
+    background: var(--color-dp-primary) !important;
+    border: solid 1px var(--color-dp-primary) !important;
+    color: #fff !important;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    text-align: center !important;
+}
+
+.ui-state-default {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.ui-state-active {
+    background: var(--color-dp-primary) !important;
+    border: solid 1px var(--color-dp-primary) !important;
+    border-radius: 50% !important;
+}
+
+.ui-datepicker th {
+    color: var(--color-dp-primary) !important;
+}
+
+
+/* ---------------------------------------------SỰ KIỆN-----------------------------------------------*/
+
+.sukiennoibat {
+    position: absolute;
+    top: 43px;
+    left: 430px;
+    max-width: 500px;
+    max-height: 70px;
+    z-index: 1;
+}
+
+.phaobong {
+    position: absolute;
+    z-index: 0;
+    top: -10px;
+    left: 23px;
+    max-width: 1220px;
+    max-height: 800px;
+}
+
+.flag-trai {
+    position: absolute;
+    top: 28px;
+    left: -55px;
+    max-width: 435px;
+    max-height: 180px;
+    z-index: 1;
+}
+
+.flag-phai {
+    position: absolute;
+    right: -54px;
+    top: -60px;
+    max-width: 500px;
+    max-height: 242px;
+    z-index: 1;
+}
+
+.list-event {
+    position: relative;
+    left: 8%;
+    top: 28%;
+    width: 1060px;
+    overflow: hidden;
+}
+
+.card-deck-event {
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: 0px;
+    margin-left: -15px;
+    height: 390px;
+}
+
+.card-deck-event .card-event {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-event img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.event-date1 {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    color: #575757;
+    margin: 3px 0 0 3px;
+}
+
+.calendar-icon1 {
+    width: 20px;
+    height: 20px;
+}
+
+.card-body a {
+    position: absolute;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 190px;
+    height: 35px;
+    width: 140px;
+    background-image: url(../img/button-xemchitiet.png);
+    background-position: center;
+}
+
+.event-price1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #FA7D09;
+    margin-top: 8px;
+}
+
+.btn-previous {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    border: none;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 43px;
+    height: 35px;
+    width: 40px;
+    background-image: url(../img/button-previous.png);
+    background-position: center;
+    z-index: 1;
+}
+
+.btn-next {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    border: none;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 43px;
+    height: 35px;
+    width: 40px;
+    background-image: url(../img/button-next.png);
+    background-position: center;
+}
+
+
+/* -------------------------------------------------CHI TIẾT SỰ KIỆN------------------------------------*/
+
+.sukien {
+    position: absolute;
+    top: 65px;
+    left: 570px;
+    max-width: 400px;
+    max-height: 50px;
+    z-index: 1;
+}
+
+.bangchitiet {
+    position: absolute;
+    left: 8%;
+    top: 22%;
+    width: 1065px;
+    height: 510px;
+}
+
+.content-event {
+    position: absolute;
+    left: 12%;
+    right: 5%;
+    top: 29%;
+}
+
+.infom {
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.content-event-left .anh1 {
+    width: 300px;
+}
+
+.event-date {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #575757;
+    margin: 3px 0 0 3px;
+}
+
+.event-address {
+    color: #575757;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.event-price {
+    font-weight: 700;
+    font-size: 30px;
+    color: #FA7D09;
+}
+
+.event-detail-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #000000;
+}
+
+.content-event-right {
+    position: absolute;
+    top: 0%;
+    left: 32%;
+}
+
+.content-event-right-ss1 {
+    width: 200px;
+    height: 200px;
+}
+
+.content-event-right-ss2 {
+    position: absolute;
+    top: 0%;
+    left: 110%;
+    width: 200px;
+    height: 200px;
+}
+
+.content-event-right-ss3 {
+    position: absolute;
+    top: 0%;
+    left: 220%;
+    width: 200px;
+    height: 200px;
+}
+
+.anhchitiet-sk {
+    margin: 10px 0px 10px 0px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+/* chung */
+
+.event-content .icon {
+    color: var(--color-primary-2);
+}
+
+.event-content .price {
+    color: var(--text-color-2);
+    font-weight: 600;
+}
+
+.text-title {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 100px;
+    height: 100px;
+}
+
+.text-title img {
+    width: 300px;
+}
+
+.input-38 {
+    width: 38% !important;
+}
+
+.input-60 {
+    width: 60% !important;
+}
