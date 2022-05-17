@@ -51,7 +51,7 @@
         </div>
         <!-- form book ticket -->
         <img class="match" src="img/khungnoi.png" />
-        <form method="post" action="{{ route('payment') }}" autocomplete="off" class="form">
+        <form action="{{ route('payment') }}" autocomplete="off" class="form">
             @csrf
             <img class="banner" src="img/banner_01.png" />
             <img class="bg-form" src="img/form.png" />

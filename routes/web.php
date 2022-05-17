@@ -27,7 +27,7 @@ Route::get('/event-detail', function () {
 })->name('event-detail');
 Route::get('/payment-succes', function () {
     return view('payment-succes');
-})->name('payment-succes');
+})->name('payment-success');
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');

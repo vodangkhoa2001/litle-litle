@@ -150,7 +150,7 @@
             class="input input-sort"
           />
           <!-- button book ticket -->
-          <a href="paymentSuccess.html" class="btn-pay">
+          <a href="{{ route('payment-success') }}" class="btn-pay">
             <img src="img/btn-pay.png" />
           </a>
         </div>
